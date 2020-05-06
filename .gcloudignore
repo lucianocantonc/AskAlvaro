@@ -1,0 +1,4 @@
+env
+.gcloudignore
+askalvaro_dict.py
+firestore-service-account.json
