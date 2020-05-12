@@ -6,7 +6,7 @@ import os
 
 db = firestore.Client()
 app = Flask(__name__)
-CORS(app, resources={r"": {"origins": ""}})
+CORS(app)
 
 @app.route('/register', methods=['POST'])
 def input():
