@@ -1,11 +1,12 @@
-#-*- coding: utf-8 -*-
 from google.cloud import firestore
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import csv
 import os
 
 db = firestore.Client()
 app = Flask(__name__)
+CORS(app, resources={r"": {"origins": ""}})
 
 @app.route('/register', methods=['POST'])
 def input():
